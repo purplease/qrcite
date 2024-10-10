@@ -1,18 +1,24 @@
+import resolveURL from "@/utils/image";
 import React from "react";
 
 const sideImages = [
   {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/dec7c5746bfc429a93e9d09fd677b1b364236f577de7e7554db13f6549614f10?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    src: resolveURL(
+      "/images/dec7c5746bfc429a93e9d09fd677b1b364236f577de7e7554db13f6549614f10.png"
+    ),
     alt: "Product information display",
   },
   {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/251a833b07768d12c58e70dd97fa71aae31aeaf63024e4a019647ee2515f2e08?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    src: resolveURL(
+      "/images/251a833b07768d12c58e70dd97fa71aae31aeaf63024e4a019647ee2515f2e08.png"
+    ),
     alt: "QR code scanning demonstration",
   },
 ];
 
-const imageURL =
-  "https://cdn.builder.io/api/v1/image/assets/TEMP/875a7a3c64a6ee2c8fdac518efdd94ae81783ddf57cce22533e7c8f35685cd2e?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440";
+const imageURL = resolveURL(
+  "/images/875a7a3c64a6ee2c8fdac518efdd94ae81783ddf57cce22533e7c8f35685cd2e.png"
+);
 
 interface InfoCardProps {
   title: string;

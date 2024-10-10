@@ -1,12 +1,18 @@
+import resolveURL from "@/utils/image";
 import React from "react";
 
 const columnImages = [
-  "https://cdn.builder.io/api/v1/image/assets/TEMP/4368487ed8b5b61001372414701feeaf33f576c92f3be733cf9d834249c761bd?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
-  "https://cdn.builder.io/api/v1/image/assets/TEMP/85a205422da5897848e5172c1732ac1141a02856cb36ee24fdd3ae6bb255a471?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+  resolveURL(
+    "/images/4368487ed8b5b61001372414701feeaf33f576c92f3be733cf9d834249c761bd.png"
+  ),
+  resolveURL(
+    "/images/85a205422da5897848e5172c1732ac1141a02856cb36ee24fdd3ae6bb255a471.png"
+  ),
 ];
 
-const imageURL =
-  "https://cdn.builder.io/api/v1/image/assets/TEMP/c1b7d6ae038cfd247c3d83070cc4fe651345f84522409844dafc4b6225e51022?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440";
+const imageURL = resolveURL(
+  "/images/c1b7d6ae038cfd247c3d83070cc4fe651345f84522409844dafc4b6225e51022.png"
+);
 
 const FeedbackSection: React.FC = () => {
   return (

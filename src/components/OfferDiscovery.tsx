@@ -1,18 +1,24 @@
+import resolveURL from "@/utils/image";
 import React from "react";
 
 const sideImages = [
   {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/0ed1d2ca1ee4fa7a892215eee59af2044c63aa4e26812b3a15489de40be7b08f?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    src: resolveURL(
+      "/images/0ed1d2ca1ee4fa7a892215eee59af2044c63aa4e26812b3a15489de40be7b08f.png"
+    ),
     alt: "Offer image 1",
   },
   {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/ed95057864d7378fb86204005812a2210a5cd27d315b1092c95a733c8377ddd1?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    src: resolveURL(
+      "/images/ed95057864d7378fb86204005812a2210a5cd27d315b1092c95a733c8377ddd1.png"
+    ),
     alt: "Offer image 2",
   },
 ];
 
-const imageURL =
-  "https://cdn.builder.io/api/v1/image/assets/TEMP/32933544ab905eec18920246e83f87f2b1b74af823b9c5902fadd9ee28af3f10?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440";
+const imageURL = resolveURL(
+  "/images/32933544ab905eec18920246e83f87f2b1b74af823b9c5902fadd9ee28af3f10.png"
+);
 
 const OfferDiscovery: React.FC = () => {
   return (

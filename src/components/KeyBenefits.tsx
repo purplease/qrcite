@@ -1,3 +1,4 @@
+import resolveURL from "@/utils/image";
 import React from "react";
 
 const benefits: BenefitProps[] = [
@@ -5,32 +6,36 @@ const benefits: BenefitProps[] = [
     title: "Complete Product Visibility",
     description:
       "Gain unmatched visibility into your product's lifecycle. From manufacturing to final sale, track every stage and actor involved. QR codes link real-time data from vendors, distributors, and sellers, so you stay informed.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/bc705d656d52b8c0f9b44360b125d5ebd672b28e5e1da5e3e492dd22562b4a9c?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/bc705d656d52b8c0f9b44360b125d5ebd672b28e5e1da5e3e492dd22562b4a9c.png"
+    ),
     imagePosition: "left",
   },
   {
     title: "Enhanced Customer Interaction",
     description:
       "Turn each product label into a gateway for customer interaction. Customers can scan to see product information, submit feedback, leave reviews, and even interact with your support team directly. Build lasting customer relationships through seamless communication.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/065973f260e282949bbad7de84a3e40ff2866e039216968f3ec5ab9b6be41802?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/065973f260e282949bbad7de84a3e40ff2866e039216968f3ec5ab9b6be41802.png"
+    ),
     imagePosition: "right",
   },
   {
     title: "Real-Time Insights and Performance Monitoring",
     description:
       "Monitor key performance indicators (KPIs) like customer feedback, reviews, and product ratings. Access real-time statistics, see product performance on a map, and visualize your customer base in detail—all in one place.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/aceed123d017cebcf8fc4bf83b142f71700a2b70bc1b61e751dac736e30acc21?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/aceed123d017cebcf8fc4bf83b142f71700a2b70bc1b61e751dac736e30acc21.png"
+    ),
     imagePosition: "left",
   },
   {
     title: "Strengthened Brand Trust and Support Services",
     description:
       "Your unique QR code not only authenticates products but also connects customers to your support services. Reduce counterfeit risks and enhance post-sale support while building brand loyalty through transparency.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/aa915916ee4706815ed1772676677995d472bda74153c852d33d7b89f05a88af?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/aa915916ee4706815ed1772676677995d472bda74153c852d33d7b89f05a88af.png"
+    ),
     imagePosition: "right",
   },
 ];
@@ -64,8 +69,12 @@ const Benefit: React.FC<BenefitProps> = ({
       </div>
       <div className="w-full sm:w-1/2 mt-4 sm:mt-0">
         <div className="flex flex-col justify-center h-full">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black">{title}</h3>
-          <p className="mt-4 sm:mt-6 md:mt-8 text-base sm:text-lg md:text-xl text-black">{description}</p>
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black">
+            {title}
+          </h3>
+          <p className="mt-4 sm:mt-6 md:mt-8 text-base sm:text-lg md:text-xl text-black">
+            {description}
+          </p>
         </div>
       </div>
     </div>

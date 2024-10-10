@@ -1,16 +1,23 @@
+import resolveURL from "@/utils/image";
 import React from "react";
 
 const images = [
   {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/b38ae1407af3301919de9db2386bb8cf74cf93a29ee6f645c20857ca1e503b7e?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    src: resolveURL(
+      "/images/b38ae1407af3301919de9db2386bb8cf74cf93a29ee6f645c20857ca1e503b7e.png"
+    ),
     alt: "Product verification image 1",
   },
   {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/da1d050324c6b7b2f4ad13df2c2b704d0f5f7b7c5bf80e8a8cfca7441c60bde4?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    src: resolveURL(
+      "/images/da1d050324c6b7b2f4ad13df2c2b704d0f5f7b7c5bf80e8a8cfca7441c60bde4.png"
+    ),
     alt: "Product verification image 2",
   },
   {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/5e8e8f99438724d884a8424f23496d02d06fbb5828c48ffbe5a8bf8c34e88167?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    src: resolveURL(
+      "/images/5e8e8f99438724d884a8424f23496d02d06fbb5828c48ffbe5a8bf8c34e88167.png"
+    ),
     alt: "Product verification image 3",
   },
 ];

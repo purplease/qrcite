@@ -1,16 +1,19 @@
+import resolveURL from "@/utils/image";
 import React from "react";
 
 const testimonials: TestimonialProps[] = [
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/ca8d22e00600504af0e57f8ff407b4a53796874e001e164f8be4666959dc4943?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/ca8d22e00600504af0e57f8ff407b4a53796874e001e164f8be4666959dc4943.png"
+    ),
     name: "Emily Johnson",
     content:
       "Since implementing QRCite's QR code solution, we've seen a huge improvement in customer engagement. The real-time feedback and product verification features have greatly increased trust in our brand.",
   },
   {
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/49feea45f96f6fa796df8c48c2c346fe06af21ef30e28e0e10ffd80ab063b937?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/49feea45f96f6fa796df8c48c2c346fe06af21ef30e28e0e10ffd80ab063b937.png"
+    ),
     name: "David Lee",
     content:
       "QRCite gave us the tools we needed to optimize our product tracking process. The smart QR codes provided us with instant data and insights, helping us streamline operations and boost customer satisfaction.",
@@ -32,10 +35,10 @@ const Testimonial: React.FC<TestimonialProps> = ({ image, name, content }) => (
         alt={`${name}'s profile`}
         className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
       />
-      <h3 className="text-2xl font-semibold text-gray-800 text-center mb-3">{name}</h3>
-      <p className="text-lg text-gray-600 flex-grow">
-        {content}
-      </p>
+      <h3 className="text-2xl font-semibold text-gray-800 text-center mb-3">
+        {name}
+      </h3>
+      <p className="text-lg text-gray-600 flex-grow">{content}</p>
     </div>
   </div>
 );

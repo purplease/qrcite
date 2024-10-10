@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { MoveRight, ChevronLeft, ChevronRight } from "lucide-react";
+import resolveURL from "@/utils/image";
 
 const carouselData = [
   {
     title: "Revolutionize Your Product Journey with Smart QR Codes",
     description:
       "Empower your business with traceability, customer insights, and real-time product data – all in one smart solution.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/ac8e07f3cc6b91791e7f5dfadcf0c4c841bf8d0dcbcf77ac6ff21dc1b743d945?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/ac8e07f3cc6b91791e7f5dfadcf0c4c841bf8d0dcbcf77ac6ff21dc1b743d945.png"
+    ),
   },
   {
     title: "Ready to Boost Your Product's Traceability",
     description: "Empower your products with our smart QR code solutions",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/b79b79b25d9c6886d301a8a126cf433d6c69ad2643dcf33cbc5d25ca65016a98?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440",
+    image: resolveURL(
+      "/images/b79b79b25d9c6886d301a8a126cf433d6c69ad2643dcf33cbc5d25ca65016a98.png"
+    ),
   },
 ];
 
@@ -74,7 +77,7 @@ const Hero: React.FC = () => {
                 alt={slide.title}
                 className="object-cover w-full h-full"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-12 sm:px-8 md:px-16 lg:px-28 text-white">
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-16 sm:px-20 md:px-24 lg:px-32 text-white">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 md:mb-4 max-w-3xl">
                   {slide.title}
                 </h1>
@@ -100,14 +103,14 @@ const Hero: React.FC = () => {
       </div>
       <button
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-1 sm:p-2 rounded-full z-10"
+        className="absolute left-4 sm:left-6 md:left-8 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-1 sm:p-2 rounded-full z-10"
         aria-label="Previous slide"
       >
         <ChevronLeft size={24} className="text-black" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-1 sm:p-2 rounded-full z-10"
+        className="absolute right-4 sm:right-6 md:right-8 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-1 sm:p-2 rounded-full z-10"
         aria-label="Next slide"
       >
         <ChevronRight size={24} className="text-black" />

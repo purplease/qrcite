@@ -1,8 +1,10 @@
+import resolveURL from "@/utils/image";
 import React from "react";
 import { siFacebook, siInstagram, siX } from "simple-icons";
 
-const logoURL =
-  "https://cdn.builder.io/api/v1/image/assets/TEMP/b097beff868f34343c28746aae32055666ad66c2d352d9521769619843890027?placeholderIfAbsent=true&apiKey=99fc076702324161981b628a0ba62440";
+const logoURL = resolveURL(
+  "/images/b097beff868f34343c28746aae32055666ad66c2d352d9521769619843890027.svg"
+);
 
 const Footer: React.FC = () => {
   return (
@@ -21,24 +23,48 @@ const Footer: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl font-semibold">Call</h3>
                 <p className="mt-2 text-gray-300">90203 94857</p>
                 <p className="mt-1 text-gray-300">75849 30201</p>
-                <h3 className="mt-6 text-xl sm:text-2xl font-semibold">Mail:</h3>
+                <h3 className="mt-6 text-xl sm:text-2xl font-semibold">
+                  Mail:
+                </h3>
                 <p className="mt-2 text-gray-300">Contact@brand.com</p>
               </div>
             </div>
           </div>
           <nav className="flex flex-col">
             <div className="flex flex-col items-start text-xl sm:text-2xl font-semibold text-white">
-              <a href="#features" className="hover:text-sky-400 transition-colors">Features</a>
-              <a href="#testimonials" className="mt-4 hover:text-sky-400 transition-colors">Testimonials</a>
-              <a href="#about" className="mt-4 hover:text-sky-400 transition-colors">About us</a>
-              <a href="#contact" className="mt-4 hover:text-sky-400 transition-colors">Contact</a>
+              <a
+                href="#features"
+                className="hover:text-sky-400 transition-colors"
+              >
+                Features
+              </a>
+              <a
+                href="#testimonials"
+                className="mt-4 hover:text-sky-400 transition-colors"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#about"
+                className="mt-4 hover:text-sky-400 transition-colors"
+              >
+                About us
+              </a>
+              <a
+                href="#contact"
+                className="mt-4 hover:text-sky-400 transition-colors"
+              >
+                Contact
+              </a>
             </div>
           </nav>
           <div className="flex flex-col lg:col-span-2">
             <div className="flex flex-col w-full text-xl sm:text-2xl">
               <h3 className="font-semibold text-white">Join for Free</h3>
               <form className="flex flex-col sm:flex-row gap-3 mt-4">
-                <label htmlFor="email" className="sr-only">Enter your mail id</label>
+                <label htmlFor="email" className="sr-only">
+                  Enter your mail id
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -94,8 +120,12 @@ const Footer: React.FC = () => {
           />
         </div>
         <div className="flex gap-6 text-sm sm:text-base">
-          <a href="/terms" className="hover:text-sky-400 transition-colors">Terms and conditions</a>
-          <a href="/privacy" className="hover:text-sky-400 transition-colors">Privacy Policy</a>
+          <a href="/terms" className="hover:text-sky-400 transition-colors">
+            Terms and conditions
+          </a>
+          <a href="/privacy" className="hover:text-sky-400 transition-colors">
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>
