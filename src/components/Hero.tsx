@@ -8,14 +8,14 @@ const carouselData = [
     description:
       "Empower your business with traceability, customer insights, and real-time product data – all in one smart solution.",
     image: resolveURL(
-      "/images/ac8e07f3cc6b91791e7f5dfadcf0c4c841bf8d0dcbcf77ac6ff21dc1b743d945.png"
+      "/images/hero1.png"
     ),
   },
   {
     title: "Ready to Boost Your Product's Traceability",
     description: "Empower your products with our smart QR code solutions",
     image: resolveURL(
-      "/images/b79b79b25d9c6886d301a8a126cf433d6c69ad2643dcf33cbc5d25ca65016a98.png"
+      "/images/hero2.png"
     ),
   },
 ];

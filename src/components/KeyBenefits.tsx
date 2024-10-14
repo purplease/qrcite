@@ -7,7 +7,7 @@ const benefits: BenefitProps[] = [
     description:
       "Gain unmatched visibility into your product's lifecycle. From manufacturing to final sale, track every stage and actor involved. QR codes link real-time data from vendors, distributors, and sellers, so you stay informed.",
     image: resolveURL(
-      "/images/bc705d656d52b8c0f9b44360b125d5ebd672b28e5e1da5e3e492dd22562b4a9c.png"
+      "/images/benifits1.png"
     ),
     imagePosition: "left",
   },
@@ -16,7 +16,7 @@ const benefits: BenefitProps[] = [
     description:
       "Turn each product label into a gateway for customer interaction. Customers can scan to see product information, submit feedback, leave reviews, and even interact with your support team directly. Build lasting customer relationships through seamless communication.",
     image: resolveURL(
-      "/images/065973f260e282949bbad7de84a3e40ff2866e039216968f3ec5ab9b6be41802.png"
+      "/images/benifits2.png"
     ),
     imagePosition: "right",
   },
@@ -25,7 +25,7 @@ const benefits: BenefitProps[] = [
     description:
       "Monitor key performance indicators (KPIs) like customer feedback, reviews, and product ratings. Access real-time statistics, see product performance on a map, and visualize your customer base in detail—all in one place.",
     image: resolveURL(
-      "/images/aceed123d017cebcf8fc4bf83b142f71700a2b70bc1b61e751dac736e30acc21.png"
+      "/images/benifits3.png"
     ),
     imagePosition: "left",
   },
@@ -34,7 +34,7 @@ const benefits: BenefitProps[] = [
     description:
       "Your unique QR code not only authenticates products but also connects customers to your support services. Reduce counterfeit risks and enhance post-sale support while building brand loyalty through transparency.",
     image: resolveURL(
-      "/images/aa915916ee4706815ed1772676677995d472bda74153c852d33d7b89f05a88af.png"
+      "/images/benifits4.png"
     ),
     imagePosition: "right",
   },

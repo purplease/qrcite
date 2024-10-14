@@ -4,20 +4,20 @@ import React from "react";
 const sideImages = [
   {
     src: resolveURL(
-      "/images/dec7c5746bfc429a93e9d09fd677b1b364236f577de7e7554db13f6549614f10.png"
+      "/images/productInfo2.png"
     ),
     alt: "Product information display",
   },
   {
     src: resolveURL(
-      "/images/251a833b07768d12c58e70dd97fa71aae31aeaf63024e4a019647ee2515f2e08.png"
+      "/images/productInfo3.png"
     ),
     alt: "QR code scanning demonstration",
   },
 ];
 
 const imageURL = resolveURL(
-  "/images/875a7a3c64a6ee2c8fdac518efdd94ae81783ddf57cce22533e7c8f35685cd2e.png"
+  "/images/productInfo1.png"
 );
 
 interface InfoCardProps {

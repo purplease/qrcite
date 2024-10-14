@@ -3,15 +3,15 @@ import React from "react";
 
 const columnImages = [
   resolveURL(
-    "/images/4368487ed8b5b61001372414701feeaf33f576c92f3be733cf9d834249c761bd.png"
+    "/images/feedback2.png"
   ),
   resolveURL(
-    "/images/85a205422da5897848e5172c1732ac1141a02856cb36ee24fdd3ae6bb255a471.png"
+    "/images/feedback3.png"
   ),
 ];
 
 const imageURL = resolveURL(
-  "/images/c1b7d6ae038cfd247c3d83070cc4fe651345f84522409844dafc4b6225e51022.png"
+  "/images/feedback1.png"
 );
 
 const FeedbackSection: React.FC = () => {

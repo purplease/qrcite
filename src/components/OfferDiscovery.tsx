@@ -4,20 +4,20 @@ import React from "react";
 const sideImages = [
   {
     src: resolveURL(
-      "/images/0ed1d2ca1ee4fa7a892215eee59af2044c63aa4e26812b3a15489de40be7b08f.png"
+      "/images/discovery2.png"
     ),
     alt: "Offer image 1",
   },
   {
     src: resolveURL(
-      "/images/ed95057864d7378fb86204005812a2210a5cd27d315b1092c95a733c8377ddd1.png"
+      "/images/discovery3.png"
     ),
     alt: "Offer image 2",
   },
 ];
 
 const imageURL = resolveURL(
-  "/images/32933544ab905eec18920246e83f87f2b1b74af823b9c5902fadd9ee28af3f10.png"
+  "/images/discovery1.png"
 );
 
 const OfferDiscovery: React.FC = () => {
