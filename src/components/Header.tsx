@@ -10,10 +10,10 @@ const Header: React.FC = () => {
       <img
         loading="lazy"
         src={resolveURL(
-          "/images/0966a5f887208c29e823ac43e5866f183930c752d33ccadb01a1695786cdf358.svg"
+          "/images/Logo.png"
         )}
         alt="Company logo"
-        className="object-contain w-32 sm:w-36 max-w-full aspect-[4.41]"
+        className="object-contain w-32 sm:w-36 max-w-full "
       />
       <button className="sm:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

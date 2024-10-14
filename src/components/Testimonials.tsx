@@ -4,7 +4,7 @@ import React from "react";
 const testimonials: TestimonialProps[] = [
   {
     image: resolveURL(
-      "/images/ca8d22e00600504af0e57f8ff407b4a53796874e001e164f8be4666959dc4943.png"
+      "/images/Testimonial1.png"
     ),
     name: "Emily Johnson",
     content:
@@ -12,7 +12,7 @@ const testimonials: TestimonialProps[] = [
   },
   {
     image: resolveURL(
-      "/images/49feea45f96f6fa796df8c48c2c346fe06af21ef30e28e0e10ffd80ab063b937.png"
+      "/images/Testimonial2.png"
     ),
     name: "David Lee",
     content:
