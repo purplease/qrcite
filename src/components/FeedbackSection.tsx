@@ -2,17 +2,11 @@ import resolveURL from "@/utils/image";
 import React from "react";
 
 const columnImages = [
-  resolveURL(
-    "/images/feedback2.png"
-  ),
-  resolveURL(
-    "/images/feedback3.png"
-  ),
+  resolveURL("/images/feedback1.png"),
+  resolveURL("/images/feedback2.png"),
 ];
 
-const imageURL = resolveURL(
-  "/images/feedback1.png"
-);
+const imageURL = resolveURL("/images/feedback3.png");
 
 const FeedbackSection: React.FC = () => {
   return (
