@@ -9,5 +9,5 @@ export default defineConfig({
       "@": "/src",
     },
   },
-  base: "/qrcite/", // change env-variable when this change is made
+  base: "/", // change env-variable when this change is made
 });
